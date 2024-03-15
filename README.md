@@ -1,1 +1,2 @@
-# DerekPagelsINACAP.github.io
+# Derek Pagels - INACAP
+## Ramo Actual: Programación Front End
