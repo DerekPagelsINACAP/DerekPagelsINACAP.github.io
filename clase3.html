@@ -6,6 +6,7 @@
     <title>Etiquetas de Formulario</title>
 </head>
 <body>
+    <h2><a href="pdfs/html5 formualrios.pdf">PDF: Etiquetas de formularios</a></h2>
     <form>
         <ul>
             <h3>Text</h3>
@@ -17,7 +18,21 @@
             <h3>Email</h3>
             <li><input type="email"></li> <!-- Para escribir correos -->
             <h3>Number</h3>
-            <li><input type="number"></li> <!-- Para insertar números -->
+            <li><input type="number" min="0" max="100" step="10" value="50"></li> <!-- Para insertar números -->
+            <h3>Range</h3>
+            <li><input type="range" min="0" max="100" step="10" value="50"></li> <!-- Para elegir de un rango de números -->
+            <h3>Date</h3>
+            <li><input type="date"></li> <!-- Para fechas -->
+            <h3>Datetime</h3>
+            <li><input type="datetime"></li> <!-- Para fecha con hora -->
+            <h3>Month</h3>
+            <li><input type="month"></li> <!-- Para meses -->
+            <h3>Week</h3>
+            <li><input type="week"></li> <!-- Para semanas -->
+            <h3>Time</h3>
+            <li><input type="time" min="11:30" max="23:30" step="600"></li> <!-- Para una hora específica -->
+            <h3>Color</h3>
+            <li><input type="color"></li> <!-- Para elegir colores -->
         </ul>
     </form>
 </body>
