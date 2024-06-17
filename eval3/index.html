@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 3 - Derek Pagels</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="mindicador.js"></script>
+</head>
+<body>
+    <!-- -	Desarrollar validación de cajas de texto, incluye validación de Rut.  -->
+    <fieldset id="validrut">
+        <legend>Validación de Rut</legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Su Nombre" required>
+        <label for="rut">RUT: </label>
+        <input type="text" name="rut" id="rut" placeholder="XXXXXXXX-X" required>
+        <input type="submit" id="registrar" value="Enviar" onclick="validaRUT()">
+    </fieldset>
+    <!-- -	Utilizar métodos para aparecer, mostrar, ocultar o algún otro que manipule las etiquetas div.  -->
+    <label for="mostrarTutorial">Ver Tutorial de Rut</label>
+    <input type="checkbox" name="mostrarTutorial" id="mostrarTutorial" onclick="mostrarTutorial()" onkeypress="mostrarTutorial()">
+    <div id="tutorialRUT" style="display: none">
+        <h1>Cómo obtener un RUT?</h1>
+        <a href="https://www.registrocivil.cl"><img src="https://th.bing.com/th/id/OIP.cDjzQ6s8mMEIENq_zHsUdwHaE7?rs=1&pid=ImgDetMain" alt="Persona caminando hacia el Registro Civil" width="50%"></a>
+        <a href="https://www.registrocivil.cl"><button type="button">Haga Click Aquí</button></a>
+    </div>
+    <!-- -	Crear arreglos para recorrer los datos presentados. -->
+    <!-- -	Definir relaciones de imágenes y enlaces según corresponda. -->
+    <div id="registros">
+        <h1>Lista de Registrados</h1>
+        <ol id="listaRegistros">
+        </ol>
+    </div>
+    <div id="indicadores">
+        <h2>Indicadores Económicos</h2>
+    <h3 id="Fecha">Fecha Actual</h3>
+    <ul>
+        <li id="UF"></li>
+        <li id="UTM"></li>
+        <li id="Euro"></li>
+    </ul>
+    </div>
+</body>
+</html>
